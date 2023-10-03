@@ -29,11 +29,11 @@
  
     <script>
         document.getElementById("fileInput").addEventListener("change", function() {
-            const randomNumber = Math.random(); // Generate a random number between 0 and 1
+            const Number = Math.random();
             const resultElement = document.getElementById("result");
             const uploadedImageElement = document.getElementById("uploadedImage");
 
-            if (randomNumber < 0.5) {
+            if (Number < 0.5) {
                 resultElement.textContent = "You probably have glaucoma, get checked out by an optometrist soon.";
             } else {
                 resultElement.textContent = "Your eyes are healthy!";
